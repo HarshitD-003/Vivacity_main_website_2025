@@ -1,14 +1,11 @@
-import React from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import {
   FaRegArrowAltCircleRight,
   FaRegArrowAltCircleLeft,
 } from "react-icons/fa";
-
 import Events from "../../assets/images/Events.png";
-import Footer from "../../assets/images/Footer.png";
-
+import Event_button from "../../assets/images/Event_button.png";
 function EventsComponent() {
-  // Dummy data object to simulate dynamic content
   const eventData = [
     {
       id: 1,
@@ -23,6 +20,7 @@ function EventsComponent() {
       ],
       prizeWorth: "2.5 Lakh+",
       image: "src/assets/images/Mask group.png",
+      link: "/dance-events",
     },
     {
       id: 2,
@@ -37,6 +35,7 @@ function EventsComponent() {
       ],
       prizeWorth: "1.8 Lakh+",
       image: "/api/placeholder/800/500",
+      link: "/music-events",
     },
     {
       id: 3,
@@ -51,101 +50,138 @@ function EventsComponent() {
       ],
       prizeWorth: "1.5 Lakh+",
       image: "/api/placeholder/800/500",
+      link: "/drama-events",
     },
   ];
 
-  const [currentEventIndex, setCurrentEventIndex] = React.useState(0);
+  const [currentEventIndex, setCurrentEventIndex] = useState(0);
   const currentEvent = eventData[currentEventIndex];
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     setCurrentEventIndex((prev) => (prev + 1) % eventData.length);
-  };
+  }, [eventData.length]);
 
-  const handlePrevious = () => {
+  const handlePrevious = useCallback(() => {
     setCurrentEventIndex((prev) =>
       prev === 0 ? eventData.length - 1 : prev - 1
     );
-  };
+  }, [eventData.length]);
+
+  // Auto-advance timer
+  useEffect(() => {
+    const timer = setInterval(() => {
+      handleNext();
+    }, 6000);
+
+    return () => clearInterval(timer);
+  }, [handleNext]);
+
+  const handleKnowMore = useCallback(() => {
+    window.location.href = currentEvent.link;
+  }, [currentEvent.link]);
 
   return (
-    <>
-      <div
-        className="min-h-lvh p-4 md:p-8 flex flex-col justify-center items-center"
-        style={{
-          backgroundImage: "url('src/assets/images/Event_background.png')",
-          backgroundSize: "cover, contain",
-          backgroundPosition: "center, top",
-          backgroundRepeat: "no-repeat, no-repeat",
-        }}
-      >
-        {/* Events header image */}
-        <div className="relative w-full max-w-5xl mx-auto mb-6">
-          <div className="flex justify-center">
-            <img
-              src={Events}
-              alt="Events"
-              className="w-48 md:w-64 object-contain"
-            />
-          </div>
+    <div
+      className="min-h-lvh p-4 md:p-8 flex flex-col justify-center items-center"
+      style={{
+        backgroundImage: "url('src/assets/images/Event_background.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      {/* Events header image */}
+      <div className="w-full max-w-5xl mx-auto mb-6">
+        <div className="flex justify-center">
+          <img
+            src={Events}
+            alt="Events"
+            className="w-48 md:w-64 object-contain"
+          />
         </div>
+      </div>
 
-        {/* Main card container */}
-        <div className="relative w-full h-2/3 max-w-5xl mx-auto">
-          {/* Navigation buttons in polygon box */}
-          <div
-            className="absolute top-0 right-0 z-10"
-            style={{
-              clipPath: "polygon(3% 0, 100% 0, 100% 100%, 30% 100%)",
-            }}
-          >
-            <div className="bg-[#53B08E] flex p-2 md:p-4 pl-2 space-x-2">
-              <button
-                onClick={handlePrevious}
-                className="bg-[#53B08E] w-16 h-8 flex items-center justify-center rounded-full"
-              >
-                <span className="ml-4">
-                  <FaRegArrowAltCircleLeft color="black" size={35} />
-                </span>
-              </button>
-              <button
-                onClick={handleNext}
-                className="bg-[#53B08E] w-16 h-8 flex items-center justify-center rounded-full"
-              >
-                <span className="ml-4">
-                  <FaRegArrowAltCircleRight color="black" size={35} />
-                </span>
-              </button>
-            </div>
-          </div>
-
+      {/* Container wrapper for layered effect */}
+      <div className="relative w-full max-w-6xl mx-auto">
+        {/* Black background container */}
+        <div className="absolute -left-3 -bottom-3 w-full h-full bg-black"></div>
+        <div className="relative w-full top-0 p-2 bg-black">
           {/* Main content container */}
-          <div className="relative bg-white overflow-hidden shadow-2xl">
-            <div className="relative h-[300px] lg:h-[550px]">
-              {/* Left section background with polygon */}
+          <div className="relative w-full bg-black">
+            {/* Navigation buttons with increased size */}
+            <div
+              className="absolute top-0 right-0 z-10"
+              style={{
+                clipPath: "polygon(0 0, 100% 0, 100% 100%, 16% 100%)",
+              }}
+            >
+              <div className="bg-[#53B08E] flex p-2 md:p-2 pl-2 space-x-1 ">
+                <button
+                  onClick={handlePrevious}
+                  className="bg-[#53B08E] w-14 h-10 md:w-20 md:h-12 flex items-center justify-center"
+                >
+                  <FaRegArrowAltCircleLeft color="black" size={38} />
+                </button>
+                <button
+                  onClick={handleNext}
+                  className="bg-[#53B08E] w-14 h-10 md:w-20 md:h-12 flex items-center justify-center"
+                >
+                  <FaRegArrowAltCircleRight color="black" size={38} />
+                </button>
+              </div>
+            </div>
+
+            {/* Content container */}
+            <div className="relative h-[550px]">
+              {/* Left section with title and items */}
               <div
-                className="absolute top-0 left-0 h-full w-[45%] bg-[#53B08E]"
+                className="absolute top-0 left-0 h-full w-[48%] sm:w-[50%] md:w-[53%] bg-[#53B08E] z-10"
                 style={{
-                  clipPath: "polygon(0 0, 100% 0, 85% 100%, 0 100%)",
+                  clipPath: "polygon(0 0, 100% 0, 85% 100%, 0% 100%)",
                 }}
               >
-                {/* Blue header section */}
-                <div
-                  className="absolute top-0 left-0 w-full h-[120px] bg-[#003E68]"
-                  style={{
-                    clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-                  }}
-                >
-                  <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white p-6">
+                {/* Title section */}
+                <div className="h-[120px] bg-[#003E68]">
+                  <h2 className="font-serif text-2xl sm:text-3xl md:text-5xl text-white p-4 md:p-6">
                     {currentEvent.title}
                   </h2>
+                </div>
+
+                {/* Events list section */}
+                <div className="mt-4 px-3 py-3 ml-5">
+                  <ul className="space-y-2 sm:space-y-3 text-white text-xs sm:text-sm md:text-lg lg:text-2xl ">
+                    {currentEvent.items.map((item, index) => (
+                      <li
+                        key={index}
+                        className="flex items-center justify-start"
+                      >
+                        <span className="w-1.5 h-1.5 md:w-2 md:h-2 bg-white rounded-full mr-2 md:mr-3 flex-shrink-0"></span>
+                        <span className="line-clamp-2 sm:line-clamp-1">
+                          {item}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="absolute flex bottom-4 left-3">
+                  <button
+                    onClick={handleKnowMore}
+                    className="transition-transform hover:scale-105 focus:outline-none"
+                  >
+                    <img
+                      src={Event_button}
+                      alt="Know More"
+                      className="h-8 sm:h-10 md:h-14 lg:h-24 w-auto ml-5 justify-center object-contain" // Increased size for larger screens
+                    />
+                  </button>
                 </div>
               </div>
 
               {/* Right section with image */}
               <div
-                className="absolute top-0 right-0 h-full w-[66%]"
+                className="absolute top-0 right-0 h-full w-[65%] sm:w-[60%] md:w-[60%]"
                 style={{
-                  clipPath: "polygon(15% 0, 100% 0, 100% 100%, 0 100%)",
+                  clipPath: "polygon(15% 0, 100% 0, 100% 100%, 0% 100%)",
                 }}
               >
                 <img
@@ -153,45 +189,26 @@ function EventsComponent() {
                   alt={currentEvent.title}
                   className="w-full h-full object-cover"
                 />
-              </div>
 
-              {/* Content sections */}
-              <div className="relative h-full">
-                {/* Left content */}
-                <div className="absolute left-0 top-10 w-[50%] h-full p-6 pt-28">
-                  <ul className="space-y-4 md:space-y-5 text-white text-lg md:text-xl">
-                    {currentEvent.items.map((item, index) => (
-                      <li key={index} className="flex items-center">
-                        <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-
-                  <div className="mt-8">
-                    <button className="bg-pink-500 px-8 py-3 text-xl font-bold border-2 border-black hover:bg-pink-600 transition-colors">
-                      KNOW MORE
-                    </button>
-                  </div>
-                </div>
-
-                {/* Prize worth box with polygon shape */}
+                {/* Prize worth box */}
                 <div className="absolute bottom-0 right-0">
-                  <div className="relative">
-                    <div
-                      className="relative bg-[#53B08E] p-4 w-56 md:w-64"
-                      style={{
-                        clipPath: "polygon(15% 0, 100% 0, 100% 100%, 0% 100%)",
-                      }}
-                    >
-                      <div className="px-2 text-center">
-                        <p className="text-white text-xl font-bold">
-                          PRIZES WORTH
-                        </p>
-                        <p className="text-yellow-300 text-4xl font-serif">
-                          {currentEvent.prizeWorth}
-                        </p>
-                      </div>
+                  <div
+                    className="bg-[#53B08E] p-2 sm:p-4 md:p-6 lg:p-8" // Increased padding for larger screens
+                    style={{
+                      clipPath: "polygon(15% 0, 100% 0, 100% 100%, 0% 100%)",
+                    }}
+                  >
+                    <div className="px-2 text-center">
+                      <p className="text-white text-3xl sm:text-lg md:text-xl lg:text-2xl font-bold">
+                        {" "}
+                        {/* Adjusted text sizes */}
+                        PRIZES WORTH
+                      </p>
+                      <p className="text-yellow-300 text-2xl sm:text-xl md:text-3xl lg:text-4xl font-serif">
+                        {" "}
+                        {/* Increased text size */}
+                        {currentEvent.prizeWorth}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -200,10 +217,15 @@ function EventsComponent() {
           </div>
         </div>
       </div>
-      <div className="w-full ">
-        <img src={Footer} alt="footer" className="w-full  object-contain" />
-      </div>
-    </>
+
+      {/* <footer className="w-full mt-8">
+        <img
+          src="src/assets/images/Footer.png"
+          alt="footer"
+          className="w-full h-auto object-contain"
+        />
+      </footer> */}
+    </div>
   );
 }
 
