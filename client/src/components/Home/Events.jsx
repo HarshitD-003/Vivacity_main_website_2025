@@ -1,14 +1,13 @@
-import React from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import {
   FaRegArrowAltCircleRight,
   FaRegArrowAltCircleLeft,
 } from "react-icons/fa";
-
 import Events from "../../assets/images/Events.png";
-import Footer from "../../assets/images/Footer.png";
+import Event_button from "../../assets/images/Event_button.png";
 
 function EventsComponent() {
-  // Dummy data object to simulate dynamic content
+  // Event data remains unchanged
   const eventData = [
     {
       id: 1,
@@ -23,6 +22,7 @@ function EventsComponent() {
       ],
       prizeWorth: "2.5 Lakh+",
       image: "src/assets/images/Mask group.png",
+      link: "/dance-events",
     },
     {
       id: 2,
@@ -37,6 +37,7 @@ function EventsComponent() {
       ],
       prizeWorth: "1.8 Lakh+",
       image: "/api/placeholder/800/500",
+      link: "/music-events",
     },
     {
       id: 3,
@@ -51,101 +52,125 @@ function EventsComponent() {
       ],
       prizeWorth: "1.5 Lakh+",
       image: "/api/placeholder/800/500",
+      link: "/drama-events",
     },
   ];
 
-  const [currentEventIndex, setCurrentEventIndex] = React.useState(0);
+  const [currentEventIndex, setCurrentEventIndex] = useState(0);
   const currentEvent = eventData[currentEventIndex];
 
-  const handleNext = () => {
+  // Handler functions remain unchanged
+  const handleNext = useCallback(() => {
     setCurrentEventIndex((prev) => (prev + 1) % eventData.length);
-  };
+  }, [eventData.length]);
 
-  const handlePrevious = () => {
+  const handlePrevious = useCallback(() => {
     setCurrentEventIndex((prev) =>
       prev === 0 ? eventData.length - 1 : prev - 1
     );
-  };
+  }, [eventData.length]);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      handleNext();
+    }, 6000);
+    return () => clearInterval(timer);
+  }, [handleNext]);
+
+  const handleKnowMore = useCallback(() => {
+    window.location.href = currentEvent.link;
+  }, [currentEvent.link]);
 
   return (
-    <>
-      <div
-        className="min-h-lvh p-4 md:p-8 flex flex-col justify-center items-center"
-        style={{
-          backgroundImage: "url('src/assets/images/Event_background.png')",
-          backgroundSize: "cover, contain",
-          backgroundPosition: "center, top",
-          backgroundRepeat: "no-repeat, no-repeat",
-        }}
-      >
-        {/* Events header image */}
-        <div className="relative w-full max-w-5xl mx-auto mb-6">
-          <div className="flex justify-center">
-            <img
-              src={Events}
-              alt="Events"
-              className="w-48 md:w-64 object-contain"
-            />
-          </div>
-        </div>
-
-        {/* Main card container */}
-        <div className="relative w-full h-2/3 max-w-5xl mx-auto">
-          {/* Navigation buttons in polygon box */}
-          <div
-            className="absolute top-0 right-0 z-10"
-            style={{
-              clipPath: "polygon(3% 0, 100% 0, 100% 100%, 30% 100%)",
-            }}
-          >
-            <div className="bg-[#53B08E] flex p-2 md:p-4 pl-2 space-x-2">
-              <button
-                onClick={handlePrevious}
-                className="bg-[#53B08E] w-16 h-8 flex items-center justify-center rounded-full"
-              >
-                <span className="ml-4">
-                  <FaRegArrowAltCircleLeft color="black" size={35} />
-                </span>
-              </button>
-              <button
-                onClick={handleNext}
-                className="bg-[#53B08E] w-16 h-8 flex items-center justify-center rounded-full"
-              >
-                <span className="ml-4">
-                  <FaRegArrowAltCircleRight color="black" size={35} />
-                </span>
-              </button>
+    <div
+      className="min-h-screen flex flex-col justify-center items-center"
+      style={{
+        backgroundImage: "url('src/assets/images/Event_background.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      {/* Main container - 80% of screen width */}
+      <div className="w-[70%] h-[73.65vh] relative mx-auto">
+        <div className="absolute -left-3 -bottom-3 w-full h-full bg-black"></div>
+        <div className="relative w-full h-full bg-black p-2">
+          <div className="relative w-full h-full bg-black">
+            {/* Navigation section */}
+            <div
+              className="absolute top-0 right-0 z-10 w-[18.49%] h-[12.91%]"
+              style={{
+                clipPath: "polygon(0 0, 100% 0, 100% 100%, 16% 100%)",
+              }}
+            >
+              <div className="bg-[#53B08E] flex h-full p-1 ">
+                <button
+                  onClick={handlePrevious}
+                  className="bg-[#53B08E] w-[90.68%] h-[90.69%] flex items-center justify-center ml-4"
+                >
+                  <FaRegArrowAltCircleLeft className="w-[85%] h-[85%]" />
+                </button>
+                <button
+                  onClick={handleNext}
+                  className="bg-[#53B08E] w-[90.68%] h-[90.69%] flex items-center justify-center ml-4"
+                >
+                  <FaRegArrowAltCircleRight className="w-[85%] h-[85%]" />
+                </button>
+              </div>
             </div>
-          </div>
 
-          {/* Main content container */}
-          <div className="relative bg-white overflow-hidden shadow-2xl">
-            <div className="relative h-[300px] lg:h-[550px]">
-              {/* Left section background with polygon */}
+            <div className="relative h-full">
+              {/* Left panel */}
               <div
-                className="absolute top-0 left-0 h-full w-[45%] bg-[#53B08E]"
+                className="absolute top-0 left-0 h-full w-[53%] bg-[#53B08E] z-10"
                 style={{
-                  clipPath: "polygon(0 0, 100% 0, 85% 100%, 0 100%)",
+                  clipPath: "polygon(0 0, 100% 0, 85% 100%, 0% 100%)",
                 }}
               >
-                {/* Blue header section */}
-                <div
-                  className="absolute top-0 left-0 w-full h-[120px] bg-[#003E68]"
-                  style={{
-                    clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-                  }}
-                >
-                  <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white p-6">
+                {/* Dance Events heading */}
+                <div className="h-[22.26%] bg-[#003E68]">
+                  <h2 className="font-serif text-white p-[4%] text-[2.5vw]">
                     {currentEvent.title}
                   </h2>
                 </div>
+
+                {/* List container */}
+                <div className="w-[37.11%] h-[38.61%] mt-[3%] px-[2%] py-[2%] ml-[2%]">
+                  <ul className="space-y-[2%] text-white">
+                    {currentEvent.items.map((item, index) => (
+                      <li
+                        key={index}
+                        className="flex items-center justify-start text-[1.2vw]"
+                      >
+                        <span className="w-2 h-2 bg-white rounded-full mr-[2%] flex-shrink-0"></span>
+                        <span className="line-clamp-2 sm:line-clamp-1">
+                          {item}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Know More button */}
+                <div className="absolute bottom-[4%] left-[3%] w-[34.38%] h-[16.52%]">
+                  <button
+                    onClick={handleKnowMore}
+                    className="w-full h-full transition-transform hover:scale-105 focus:outline-none"
+                  >
+                    <img
+                      src={Event_button}
+                      alt="Know More"
+                      className="w-full h-full object-contain"
+                    />
+                  </button>
+                </div>
               </div>
 
-              {/* Right section with image */}
+              {/* Right panel */}
               <div
-                className="absolute top-0 right-0 h-full w-[66%]"
+                className="absolute top-0 right-0 h-full w-[60%]"
                 style={{
-                  clipPath: "polygon(15% 0, 100% 0, 100% 100%, 0 100%)",
+                  clipPath: "polygon(15% 0, 100% 0, 100% 100%, 0% 100%)",
                 }}
               >
                 <img
@@ -153,45 +178,22 @@ function EventsComponent() {
                   alt={currentEvent.title}
                   className="w-full h-full object-cover"
                 />
-              </div>
 
-              {/* Content sections */}
-              <div className="relative h-full">
-                {/* Left content */}
-                <div className="absolute left-0 top-10 w-[50%] h-full p-6 pt-28">
-                  <ul className="space-y-4 md:space-y-5 text-white text-lg md:text-xl">
-                    {currentEvent.items.map((item, index) => (
-                      <li key={index} className="flex items-center">
-                        <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-
-                  <div className="mt-8">
-                    <button className="bg-pink-500 px-8 py-3 text-xl font-bold border-2 border-black hover:bg-pink-600 transition-colors">
-                      KNOW MORE
-                    </button>
-                  </div>
-                </div>
-
-                {/* Prize worth box with polygon shape */}
-                <div className="absolute bottom-0 right-0">
-                  <div className="relative">
-                    <div
-                      className="relative bg-[#53B08E] p-4 w-56 md:w-64"
-                      style={{
-                        clipPath: "polygon(15% 0, 100% 0, 100% 100%, 0% 100%)",
-                      }}
-                    >
-                      <div className="px-2 text-center">
-                        <p className="text-white text-xl font-bold">
-                          PRIZES WORTH
-                        </p>
-                        <p className="text-yellow-300 text-4xl font-serif">
-                          {currentEvent.prizeWorth}
-                        </p>
-                      </div>
+                {/* Prizes section */}
+                <div className="absolute bottom-0 right-0 w-[43%] h-[28%]">
+                  <div
+                    className="bg-[#53B08E] h-full"
+                    style={{
+                      clipPath: "polygon(15% 0, 100% 0, 100% 100%, 0% 100%)",
+                    }}
+                  >
+                    <div className="h-full flex flex-col justify-center items-center">
+                      <p className="text-white w-[67%] h-[22.75%] text-[1.5vw] font-bold text-center">
+                        PRIZES WORTH
+                      </p>
+                      <p className="text-yellow-300 w-[78.96%] h-[67.72%] text-[2vw] font-serif text-center">
+                        {currentEvent.prizeWorth}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -200,10 +202,7 @@ function EventsComponent() {
           </div>
         </div>
       </div>
-      <div className="w-full ">
-        <img src={Footer} alt="footer" className="w-full  object-contain" />
-      </div>
-    </>
+    </div>
   );
 }
 
