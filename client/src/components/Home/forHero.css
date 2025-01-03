@@ -1,0 +1,15 @@
+
+.image-container {
+    display: inline-block; 
+  }
+  
+  .image-container img {
+    transition: transform 0.4s ease-in-out; 
+    transform-origin: center; 
+  }
+  
+  .image-container img:hover {
+    transform: scale(1.05); 
+  }
+  
+  
