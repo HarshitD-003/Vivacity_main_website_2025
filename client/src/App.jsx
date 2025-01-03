@@ -7,6 +7,8 @@ import Events from './components/Home/Events';
 import Legacy from './components/Home/Legacy';
 import PastArtists from './components/Home/PastArtists';
 import Footer from './components/Footer';
+import Hero from './components/Home/Hero';
+import Navbar from './components/Navbar';
 function App() {
 
   return (
@@ -14,6 +16,8 @@ function App() {
       <div>
         <Routes>
           <Route path='/about' element={<About />} />
+          <Route path='/navbar' element={<Navbar/>} />
+          <Route path='/hero' element={<Hero/>} />
           <Route path='/portal' element={<Portal />} />
           <Route path='/events' element={<Events />} />
           <Route path='/legacy' element={<Legacy />} />
