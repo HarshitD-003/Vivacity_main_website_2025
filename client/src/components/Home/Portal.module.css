@@ -1,0 +1,14 @@
+.HeadingBar
+{
+    background-image: url("../../assets/images/headlineBg.svg");
+}
+.PortalMain
+{
+    background-image: url("../../assets/images/portalBg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* .PortalMain img
+{
+
+} */

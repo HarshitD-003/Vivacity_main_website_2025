@@ -1,1 +1,19 @@
+@font-face {
+    font-family: 'Ready For Anything';
+    src: url('./static/ReadyforAnythingBB-Regular.ttf') format('truetype');
+}
 
+@font-face {
+    font-family: 'Ralltez';
+    src: url('./static/Ralltez.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TT Ricks';
+    src: url('./static/TTRicksRegular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Veto Sans';
+    src: url('./static/VetoSansRegular.ttf') format('truetype');
+}
