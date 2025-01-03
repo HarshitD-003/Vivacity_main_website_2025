@@ -7,6 +7,7 @@ import Event_logo from "../../assets/images/Event_logo.png";
 import Event_button from "../../assets/images/Event_know_button.png";
 import Halftone from "../../assets/images/Halftone.png";
 import Strip from "../strip";
+
 function EventsComponent() {
   const eventData = [
     {
