@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'rfabb': ['Ready For Anything', 'sans-serif'],
+        'ttr': ['TT Ricks', 'sans-serif'],
+        'ralltez': ['Ralltez', 'sans-serif'],
+        'vetosans': ['Veto Sans', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }

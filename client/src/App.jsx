@@ -19,7 +19,7 @@ function App() {
           <Route path='/legacy' element={<Legacy />} />
           <Route path='/pastartists' element={<PastArtists />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
 
