@@ -3,11 +3,11 @@ import {
   FaRegArrowAltCircleRight,
   FaRegArrowAltCircleLeft,
 } from "react-icons/fa";
-import Events from "../../assets/images/Events.png";
-import Event_button from "../../assets/images/Event_button.png";
-
+import Event_logo from "../../assets/images/Event_logo.png";
+import Event_button from "../../assets/images/Event_know_button.png";
+import Halftone from "../../assets/images/Halftone.png";
+import Strip from "../strip";
 function EventsComponent() {
-  // Event data remains unchanged
   const eventData = [
     {
       id: 1,
@@ -59,7 +59,6 @@ function EventsComponent() {
   const [currentEventIndex, setCurrentEventIndex] = useState(0);
   const currentEvent = eventData[currentEventIndex];
 
-  // Handler functions remain unchanged
   const handleNext = useCallback(() => {
     setCurrentEventIndex((prev) => (prev + 1) % eventData.length);
   }, [eventData.length]);
@@ -73,7 +72,7 @@ function EventsComponent() {
   useEffect(() => {
     const timer = setInterval(() => {
       handleNext();
-    }, 6000);
+    }, 8000000);
     return () => clearInterval(timer);
   }, [handleNext]);
 
@@ -91,19 +90,38 @@ function EventsComponent() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      {/* Main container - 80% of screen width */}
-      <div className="w-[70%] h-[73.65vh] relative mx-auto">
+      <div className="w-[18%] h-[6%] mt-1 mb-6">
+        <img
+          src={Event_logo}
+          alt="Event Logo"
+          className="w-full h-full object-contain"
+        />
+      </div>
+      {/* Main container with halftone overlay */}
+      <div className="w-[70%] h-[71.65vh] relative mx-auto">
+        {/* Black shadow */}
         <div className="absolute -left-3 -bottom-3 w-full h-full bg-black"></div>
+        {/* Main content container */}
         <div className="relative w-full h-full bg-black p-2">
+          <div
+            className="absolute inset-0 z-40 mix-blend-soft-light opacity-25"
+            style={{
+              backgroundImage: `url(${Halftone})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }}
+          ></div>
+
           <div className="relative w-full h-full bg-black">
             {/* Navigation section */}
             <div
-              className="absolute top-0 right-0 z-10 w-[18.49%] h-[12.91%]"
+              className="absolute top-0 right-0 z-30 w-[18.49%] h-[12.91%]"
               style={{
                 clipPath: "polygon(0 0, 100% 0, 100% 100%, 16% 100%)",
               }}
             >
-              <div className="bg-[#53B08E] flex h-full p-1 ">
+              <div className="bg-[#53B08E] flex h-full p-1">
                 <button
                   onClick={handlePrevious}
                   className="bg-[#53B08E] w-[90.68%] h-[90.69%] flex items-center justify-center ml-4"
@@ -128,19 +146,19 @@ function EventsComponent() {
                 }}
               >
                 {/* Dance Events heading */}
-                <div className="h-[22.26%] bg-[#003E68]">
-                  <h2 className="font-serif text-white p-[4%] text-[2.5vw]">
+                <div className="h-[23%] bg-[#003E68] flex justify-start items-center">
+                  <h2 className="text-white text-[6vw] font-ttr font-semibold ml-10">
                     {currentEvent.title}
                   </h2>
                 </div>
 
                 {/* List container */}
-                <div className="w-[37.11%] h-[38.61%] mt-[3%] px-[2%] py-[2%] ml-[2%]">
-                  <ul className="space-y-[2%] text-white">
+                <div className="w-[90%] h-[38.61%] mt-[3%] px-[2%] py-[2%] ml-[2%]">
+                  <ul className="space-y-[2%] text-white font-vetosans font-bold">
                     {currentEvent.items.map((item, index) => (
                       <li
                         key={index}
-                        className="flex items-center justify-start text-[1.2vw]"
+                        className="flex items-center justify-start text-[1.4vw]"
                       >
                         <span className="w-2 h-2 bg-white rounded-full mr-[2%] flex-shrink-0"></span>
                         <span className="line-clamp-2 sm:line-clamp-1">
@@ -152,7 +170,7 @@ function EventsComponent() {
                 </div>
 
                 {/* Know More button */}
-                <div className="absolute bottom-[4%] left-[3%] w-[34.38%] h-[16.52%]">
+                <div className="absolute bottom-[4%] left-[4.5%] w-[50%] h-[13.52%]">
                   <button
                     onClick={handleKnowMore}
                     className="w-full h-full transition-transform hover:scale-105 focus:outline-none"
@@ -180,18 +198,18 @@ function EventsComponent() {
                 />
 
                 {/* Prizes section */}
-                <div className="absolute bottom-0 right-0 w-[43%] h-[28%]">
+                <div className="absolute bottom-0 right-0 w-[50%] h-[28%]">
                   <div
                     className="bg-[#53B08E] h-full"
                     style={{
                       clipPath: "polygon(15% 0, 100% 0, 100% 100%, 0% 100%)",
                     }}
                   >
-                    <div className="h-full flex flex-col justify-center items-center">
-                      <p className="text-white w-[67%] h-[22.75%] text-[1.5vw] font-bold text-center">
+                    <div className="h-full flex flex-col justify-center items-center px-5">
+                      <p className="text-white w-[82%] 2xl:text-[2.1vw] lg:text-[2vw] font-rfabb text-center tracking-wide mt-2 ml-4">
                         PRIZES WORTH
                       </p>
-                      <p className="text-yellow-300 w-[78.96%] h-[67.72%] text-[2vw] font-serif text-center">
+                      <p className="text-[#E5FF00] w-[80%] text-[5vw] lg:text-[4.6vw] font-semibold font-ttr text-center leading-tight">
                         {currentEvent.prizeWorth}
                       </p>
                     </div>
@@ -202,6 +220,7 @@ function EventsComponent() {
           </div>
         </div>
       </div>
+      <Strip />
     </div>
   );
 }

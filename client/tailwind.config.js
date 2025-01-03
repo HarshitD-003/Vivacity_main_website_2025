@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        rfabb: ["Ready For Anything", "sans-serif"],
+        rfabb: ["Ready For Anything"],
         ttr: ["TT Ricks", "sans-serif"],
         ralltez: ["Ralltez", "sans-serif"],
         vetosans: ["Veto Sans", "sans-serif"],
