@@ -1,125 +1,162 @@
-@media(max-width: 1400px){
-    .blueArr{
-top: -40% !Important;
+@media(max-width: 1400px) {
+    .blueArr {
+        top: -40% !Important;
     }
-    .redArr{
-bottom: -70% !Important;
+
+    .redArr {
+        bottom: -70% !Important;
     }
 }
 
-@media(max-width:1200px){
-    .para{
-        font-size:15px ;
-        line-height:20px ;
+@media(max-width:1200px) {
+    .para {
+        font-size: 15px;
+        line-height: 20px;
     }
-    .head{
+
+    .head {
         font-weight: 800;
-        font-size: 30px ;
+        font-size: 30px;
         line-height: 20px;
     }
 }
-@media (max-width:449px){
-    .smImg3{
+
+@media screen and (min-width:400px) and (max-width:449px) {
+    .smImg3 {
         width: 55vw !Important;
-        top: -14% !Important ;
+        top: -10% !Important;
         height: 40vh !Important;
+        left: 10% !Important;
+    }
+}
+
+@media(max-width:400px) {
+    .smImg3 {
+        width: 55vw !Important;
+        top: -10% !Important;
+        height: 40vh !Important;
+        left: 10% !Important;
+    }
+}
+
+
+/* @media screen and (min-width:450px) and (max-width:520px){
+    .smImg3{
+        left: 25% !Important;
+        height: 50vh;
+        width: 49vw;
+        height: 50vh;
+    }
+} */
+
+@media screen and (min-width:641px) and (max-width:766px) {
+    .smImg3 {
         left: 14% !Important;
-    }
-}
-
-
-@media screen and (min-width:450px) and (max-width:520px){
-    .smImg3{
-        left:21% !Important;
-        height: 50vh;
-        width: 50vw;
-        height: 50vh;
-    }
-}
-
-@media(max-width:766px){
-    .smImg3{
-        left: 14% !Important;   
         height: 55vh;
     }
 }
 
-@media(max-width:640px){
-    .smImg3{
-        left: 11% !Important; 
-        /* this is the issue */
-    } 
-    .smImg4{
-            top: 96% !Important;
-            left: 23% !Important   ;
-    }  
+@media screen and (min-width:627px) and (max-width:640px) {
+    .smImg3 {
+        left: 13% !Important;
+    }
+
+    .smImg4 {
+        top: 96% !Important;
+        left: 23% !Important;
+    }
 }
 
-@media(max-width:510px){
-.smImg4{
-      top:97%!Important;
-      left: 22% !Important;
-      width: 40vw;
+@media screen and (min-width:551px) and (max-width:626px) {
+    .smImg3 {
+        left: 8% !Important;
+        height: 60vh;
+    }
 }
+
+@media(max-width:510px) {
+    .smImg4 {
+        top: 97% !Important;
+        left: 22% !Important;
+        width: 40vw;
+    }
 }
-@media screen and (min-width:750px) and (max-width:821px){
-    .smImg3{
+
+@media screen and (min-width:450px) and (max-width:550px) {
+    .smImg3 {
+        top: -10% !Important;
+        left: 13% !Important;
+        width: 49vw;
+        height: 40vh;
+    }
+}
+
+@media screen and (min-width:750px) and (max-width:821px) {
+    .smImg3 {
         left: 15% !Important;
     }
-} 
+}
 
 
-@media screen and (min-width: 1320px) and (max-width:1457px){
-    .para{
+@media screen and (min-width: 1320px) and (max-width:1457px) {
+    .para {
         font-size: 18px;
         line-height: 25px;
     }
- 
+
 }
-@media screen and (min-width: 1458px ) and (max-width:1600px) {
-    .head{
-        font-size: 36px;
+
+@media screen and (min-width: 1458px) and (max-width:1600px) {
+    .head {
+        font-size: 44px;
         line-height: 40px;
     }
-    .para{
-        font-size: 20px;
+
+    .para {
+        font-size: 25px;
         line-height: 28px;
     }
 }
-@media screen and  (min-width: 1601px) and (max-width: 1796px) {
-    .imagee4{
+
+@media screen and (min-width: 1601px) and (max-width: 1796px) {
+    .imagee4 {
         bottom: -32% !important;
     }
-    .imagee6{
+
+    .imagee6 {
         bottom: -50% !important;
     }
 
-    .para{
+    .para {
         font-size: 25px;
         line-height: 30px;
     }
-    .head{
+
+    .head {
         font-size: 36px;
         line-height: 40px;
     }
 }
-@media screen and (min-width:1797px) and (max-width: 1924px){
-    .para{
+
+@media screen and (min-width:1797px) and (max-width: 1924px) {
+    .para {
         font-size: 27px;
         line-height: 32px;
     }
-    .head{
+
+    .head {
         font-size: 38px;
         line-height: 40px;
     }
 }
 
-@media(min-width:1925px){
-    .para{
-        font-size: 30px ;
-        line-height: 38px ;
+@media(min-width:1925px) {
+    .para {
+        font-size: 30px;
+        line-height: 38px;
     }
-    .head{
+
+    .head {
         font-size: 42px;
         line-height: 43px;
     }

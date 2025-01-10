@@ -11,81 +11,82 @@ import "./forHero.css";
 const Hero = () => {
   return (
     <>
+     <div className="hidden sm:flex relative w-full h-screen bg-yellow-200 overflow-hidden">
+        {/* Container to maintain aspect ratio */}
+        <div className="relative w-full h-full" style={{ aspectRatio: '16/9' }}>
+          {/* Left image */}
+          <div className="absolute left-0 top-[-5%] w-[22%] h-auto">
+            <img 
+              className="w-full h-auto"
+              style={{ aspectRatio: '0.54' }}
+              src={Image1} 
+              alt="" 
+            />
+          </div>
+          
 
+          {/* Top left image */}
+          <div className="absolute left-[3%] top-[-2.5%] w-[45.2%] h-auto">
+            <img 
+              className="w-full h-auto"
+              style={{ aspectRatio: '2.3' }}
+              src={Image2} 
+              alt="" 
+            />
+          </div>
 
+          {/* Top right image */}
+          <div className="absolute left-[41%] top-[-3%] w-[46%] h-auto">
+            <img 
+              className="w-full h-auto"
+              style={{ aspectRatio: '2.29' }}
+              src={Image3} 
+              alt="" 
+            />
+          </div>
 
-      <div className="hidden sm:flex relative h-[100vh] w-full bg-yellow-200 overflow-hidden">
-        <div
-          className="absolute image-container"
-          style={{
-            left: "0%",
-            top: "-5%",
-          }}
-        >
-          <img className="w-[27vw] aspect-[0.54]" src={Image1} alt="" />
-        </div>
+          {/* Right image */}
+          <div className="absolute right-0 top-[-18%] w-[37.5%] h-auto">
+            <img 
+              className="w-full h-auto"
+              style={{ aspectRatio: '0.93' }}
+              src={Image4} 
+              alt="" 
+            />
+          </div>
 
-        <div
-          className="absolute image-container"
-          style={{
-            top: "-2.5%",
-            left: "3%",
-          }}
-        >
-          <img className="w-[45.2vw] aspect-[2.3]" src={Image2} alt="" />
-        </div>
+          {/* Bottom left image */}
+          <div className="absolute left-[2.5%] bottom-[-2%] w-[55%] h-auto">
+            <img 
+              className="w-full h-auto"
+              style={{ aspectRatio: '2.95' }}
+              src={Image5} 
+              alt="" 
+            />
+          </div>
 
-        <div
-          className="absolute image-container"
-          style={{
-            top: "-3%",
-            left: "41%",
-          }}
-        >
-          <img className="w-[46vw] aspect-[2.29]" src={Image3} alt="" />
-        </div>
+          {/* Bottom right image */}
+          <div className="absolute right-0 bottom-0 w-[44%] h-auto">
+            <img 
+              className="w-full h-auto"
+              style={{ aspectRatio: '2.7' }}
+              src={Image6} 
+              alt="" 
+            />
+          </div>
 
-        <div
-          className="absolute image-container"
-          style={{
-            top: "-18%",
-            right: "0%",
-          }}
-        >
-          <img className="w-[37.5vw] aspect-[0.93]" src={Image4} alt="" />
-        </div>
-
-        <div
-          className="absolute image-container five1"
-          style={{
-            bottom: "-2%",
-            left: "2.5%",
-          }}
-        >
-          <img className="five2 w-[55vw] aspect-[2.95]" src={Image5} alt="" />
-        </div>
-
-        <div
-          className="absolute image-container six1"
-          style={{
-            right: "0%",
-            bottom: "0%",
-          }}
-        >
-          <img className="six2 w-[44vw] aspect-[2.7]" src={Image6} alt="" />
-        </div>
-
-        <div
-          className="absolute"
-          style={{
-            top: "35%",
-            left: "28%",
-          }}
-        >
-          <img className="w-[33vw] aspect-[2]" src={Image7} alt="" />
+          {/* Center logo */}
+          <div className="absolute left-[28%] top-[35%] w-[33%] h-auto">
+            <img 
+              className="w-full h-auto"
+              style={{ aspectRatio: '2' }}
+              src={Image7} 
+              alt="" 
+            />
+          </div>
         </div>
       </div>
-      </>
+    </>
   );
 };
 
