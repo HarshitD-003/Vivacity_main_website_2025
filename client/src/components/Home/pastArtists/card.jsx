@@ -1,14 +1,11 @@
 import React from "react";
 import BackGround from "../../../assets/images/Group 60.png";
 import Amit from "../../../assets/images/Amit.png";
-const ArtistCard = ({ artist }) => {
-  // Calculate base dimensions for 1320x1320 viewport
-  // Card size should be 302x451 at 1320px viewport width
-  // Converting to percentages: (302/1320)*100 ≈ 22.87% for width
 
+const ArtistCard = ({ artist }) => {
   return (
     <div
-      className="relative w-[22.87%] min-w-[350px] aspect-[312/451] m-2"
+      className="relative w-[200px] md:w-[300px] lg:w-[350px] aspect-[312/451]"
       style={{
         backgroundImage: `url(${BackGround})`,
         backgroundSize: "contain",
@@ -27,7 +24,7 @@ const ArtistCard = ({ artist }) => {
 
       {/* Name Container */}
       <div className="w-full h-[14%] flex items-center justify-center">
-        <img src={Amit} />
+        <img src={Amit} className="w-auto h-full" />
       </div>
     </div>
   );

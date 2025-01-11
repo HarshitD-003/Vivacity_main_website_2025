@@ -79,15 +79,14 @@ function Artist() {
   };
 
   return (
-    <div className="relative w-full min-h-[600px] px-[6%]">
-      <div className="relative w-full flex items-center justify-center">
+    <div className="relative w-full min-h-[380px] md:min-h-[600px]">
+      <div className="relative w-full flex items-center justify-center px-12">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, Autoplay]}
           spaceBetween={40}
           slidesPerView={slidesPerView}
-          onSlideChange={() => console.log("Slide change")}
           onSwiper={(swiper) => console.log(swiper)}
-          className="w-[95%] py-[3%] [&_.swiper-slide]:flex [&_.swiper-slide]:items-center [&_.swiper-slide]:justify-center"
+          className="w-[90%] relative py-[3%] [&_.swiper-slide]:flex [&_.swiper-slide]:items-center [&_.swiper-slide]:justify-center"
           ref={swiperRef}
           initialSlide={0}
           loop={true}
@@ -105,18 +104,18 @@ function Artist() {
 
         <button
           onClick={goToPrevSlide}
-          className="absolute top-1/2 left-0 transform -translate-y-1/2 text-black p-[2%] rounded-full cursor-pointer hover:scale-110 transition-transform z-10"
+          className="absolute top-1/2 left-2 transform -translate-y-1/2 text-black p-[2%] rounded-full cursor-pointer hover:scale-110 transition-transform z-10"
           aria-label="Previous Slide"
         >
-          <FaRegArrowAltCircleLeft className="md:w-[3vw] md:h-[3vw] min-w-[45px] min-h-[45px]" />
+          <FaRegArrowAltCircleLeft className="md:w-[3vw] md:h-[3vw] min-w-[35px] min-h-[35px]" />
         </button>
 
         <button
           onClick={goToNextSlide}
-          className="absolute top-1/2 right-0 transform -translate-y-1/2 text-black p-[2%] rounded-full cursor-pointer hover:scale-110 transition-transform z-10"
+          className="absolute top-1/2 right-2 transform -translate-y-1/2 text-black p-[2%] rounded-full cursor-pointer hover:scale-110 transition-transform z-10"
           aria-label="Next Slide"
         >
-          <FaRegArrowAltCircleRight className="w-[3vw] h-[3vw] min-w-[45px] min-h-[45px]" />
+          <FaRegArrowAltCircleRight className="md:w-[3vw] md:h-[3vw] min-w-[35px] min-h-[35px]" />
         </button>
       </div>
     </div>
