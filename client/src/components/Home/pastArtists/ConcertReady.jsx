@@ -34,9 +34,12 @@ const Concert = () => {
             backgroundRepeat: "no-repeat",
           }}
         >
+          {/* Content wrapper */}
           <div className="w-[85.7%] h-[73.7vh]">
+            {/* Content container */}
             <div className="flex flex-col items-center h-full px-2 py-12">
-              <div className="w-[99.2%] h-[53.4%] mb-3 mt-8">
+              {/* GIF container - 98.2% of parent width, 51.4% of parent height */}
+              <div className="w-[95.2%] h-[49.4%] mb-3 mt-8">
                 <img
                   src={Gif}
                   alt="Concert animation"
@@ -44,19 +47,21 @@ const Concert = () => {
                 />
               </div>
 
+              {/* Text content - 44.2% of parent height */}
               <div className="text-center w-[98.2%] h-[44.2%] flex flex-col justify-between">
                 <div>
                   <h2 className="font-bold font-rfabb text-[1.6rem] mb-4">
                     GET CONCERT-READY NOW!
                   </h2>
-                  <p className="font-semibold font-vetosans text-[0.9rem] mb-10 leading-relaxed">
-                    Get a sneak peek into Vivacity's epic lineup with our
+                  <p className="font-semibold font-vetosans text-[0.9rem] mb-1 leading-relaxed">
+                    Get a sneak peek into Vivacity's epic lineup with our{" "}
                     <span className="italic">handpicked</span> music
                     collection—crafted to set the vibe just right! So grab your
                     squad, hit play, and let the good times roll.
                   </p>
                 </div>
 
+                {/* Buttons */}
                 <div className="flex gap-3 justify-center">
                   <button className="px-3 py-2 border-2 border-green-500 rounded-full text-black font-bold flex items-center gap-2 text-[0.875rem]">
                     <img src={Spotify} alt="Spotify logo" className="h-5" />
