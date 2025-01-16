@@ -129,7 +129,7 @@ function Page() {
 
 
                             }}>
-                                <p className="font-rfabb 1280:text-[0.8rem] lg:text-[0.63rem] md:text-[0.48rem] 1400:text-[0.87rem] 1500:text-[0.97rem] 1600:text-[1.05rem] 1980:text-[1.26rem] 2100:text-[1.4rem] text-start ">Let the streets bear witness to electrifying<br></br> performances and exhilarating beats. Let your spirits<br></br> soar with street dance!  </p>
+                                <p className="font-rfabb align-middle 1280:text-[0.9vw] lg:text-[0.90vw] md:text-[0.7vw]  1400:text-[0.9vw] 1500:text-[0.9vw] 1600:text-[0.9vw] 1980:text-[0.9vw] text-start mt-1 ">Let the streets bear witness to electrifying<br></br> performances and exhilarating beats. Let your spirits<br></br> soar with street dance!  </p>
                             </div>
 
                         </div>
@@ -177,7 +177,7 @@ function Page() {
                                 overflow: 'hidden'
 
                             }}>
-                                <p className="font-rfabb text-[0.7rem] lg:text-[0.7rem] md:text-[0.56rem] 1280:text-[0.84rem] 1400:text-[0.87rem] 1500:text-[1rem] 1600:text-[1.2rem] 1980:text-[1.4rem] text-start">Duet with a partner as your symphonies collide against<br></br> each other in this competition of melodies. </p>
+                                <p className="font-rfabb text-[0.7vw] lg:text-[0.9vw] md:text-[0.9vw] 1280:text-[0.84rem] 1400:text-[0.87rem] 1500:text-[1rem] 1600:text-[1.2rem] 1980:text-[1.4rem] text-start mt-1">Duet with a partner as your symphonies collide against<br></br> each other in this competition of melodies. </p>
                             </div>
 
                         </div>
@@ -229,7 +229,7 @@ function Page() {
                                 overflow: 'hidden'
 
                             }}>
-                                <p className="font-rfabb lg:text-[0.7rem] md:text-[0.56rem] 1280:text-[0.84rem] 1400:text-[0.97rem] 1500:text-[1rem] 1600:text-[1.2rem] 1980:text-[1.4rem]  2100:text-[1.6rem] text-start"> Set the stage on fire as you unleash the rhythm and<br /> showcase your choreography in this dance battle.</p>
+                                <p className="font-rfabb lg:text-[0.9vw] md:text-[0.9vw] 1280:text-[0.84rem] 1400:text-[0.97rem] 1500:text-[1rem] 1600:text-[1.2rem] 1980:text-[1.4rem]  2100:text-[1.6rem] text-start mt-1"> Set the stage on fire as you unleash the rhythm and<br /> showcase your choreography in this dance battle.</p>
                             </div>
                         </div>
 
@@ -276,7 +276,7 @@ function Page() {
                                 overflow: 'hidden'
 
                             }}>
-                                <p className="font-rfabb lg:text-[0.62rem] md:text-[0.42rem] 1280:text-[0.75rem] 1400:text-[0.85rem] 1500:text-[1rem] 1600:text-[1.0rem] 1980:text-[1.2rem]  2100:text-[1.3rem] text-start "> Let the beats flow and your body move! Engage<br /> yourself in solo western performances where rhythm<br /> is everything.</p>
+                                <p className="font-rfabb lg:text-[0.8vw] md:text-[0.7vw] 1280:text-[0.8vw] 1400:text-[0.8vw] 1500:text-[0.8vw] text-[0.8vw] text-start mt-1 "> Let the beats flow and your body move! Engage<br /> yourself in solo western performances where rhythm<br /> is everything.</p>
                             </div>
                         </div>
 
@@ -322,7 +322,7 @@ function Page() {
                                 overflow: 'hidden'
 
                             }}>
-                                <p className="font-rfabb lg:text-[0.72rem] md:text-[0.52rem] 1280:text-[0.83rem] 1400:text-[0.95rem] 1500:text-[1.1rem] 1600:text-[1.2rem] 1980:text-[1.4rem]  2100:text-[1.5rem] text-start"> Duet with a partner as your symphonies collide against<br /> each other in this competition of melodies.</p>
+                                <p className="font-rfabb lg:text-[0.8vw] md:text-[0.8vw] 1280:text-[0.83vw] text-[0.8vw] text-start mt-1"> Duet with a partner as your symphonies collide against<br /> each other in this competition of melodies.</p>
                             </div>
 
                         </div>
@@ -370,7 +370,7 @@ function Page() {
                                 overflow: 'hidden'
 
                             }}>
-                                <p className="font-rfabb lg:text-[0.64rem] md:text-[0.492rem] 1280:text-[0.83rem] 1400:text-[0.89rem] 1500:text-[0.93rem] 1600:text-[1.03rem] 1980:text-[1.2rem]  2100:text-[1.35rem] text-start "> Explore the allure of the classical arts! Let light <br />descend onto the stage as you enamor yourself in<br /> elegant styles and witness the roots of dance itself!</p>
+                                <p className="font-rfabb lg:text-[0.85vw] md:text-[0.8vw] 1280:text-[0.85vw]  text-[0.85vw] text-start mt-1 "> Explore the allure of the classical arts! Let light <br />descend onto the stage as you enamor yourself in<br /> elegant styles and witness the roots of dance itself!</p>
                             </div>
                         </div>
 
@@ -429,7 +429,7 @@ function Page() {
                         zIndex: '2'
 
                     }}>
-                        <p className="font-rfabb text-[1.5rem] sm:text-[1.4rem] xs:text-[1.0rem] xxs:text-[0.85rem] xxxs:text-[0.65rem] 270:text-[0.50rem] text-center overflow-hidden"> 1 lakh cash prize + 1.5 lakh worth prizes</p>
+                        <p className="font-rfabb text-[1.5rem] sm:text-[1.36rem] xs:text-[1.0rem] xxs:text-[0.85rem] xxxs:text-[0.65rem] 270:text-[0.50rem] text-center overflow-hidden"> 1 lakh cash prize + 1.5 lakh worth prizes</p>
                     </div>
 
 
@@ -476,7 +476,7 @@ function Page() {
 
 
                         }}>
-                            <p className="font-rfabb md:text-[0.8rem] sm:text-[0.78rem] xs:text-[.73rem] xxs:text-[0.6rem] xxxs:text-[0.4rem] 270:text-[0.35rem] text-start ">Let the streets bear witness to electrifying<br></br> performances and exhilarating beats. Let your spirits<br></br> soar with street dance! </p>
+                            <p className="font-rfabb md:text-[0.3vw] text-[1.6vw]  sm:text-[0.78rem] xs:text-[1.6vw] xxs:text-[1.6vw] xxxs:text-[1.6vw] 270:text-[1.6vw] mt-[1%] text-start ">Let the streets bear witness to electrifying performances and exhilarating beats. Let your spirits soar with street dance! </p>
                         </div>
                     </div>
 
@@ -522,7 +522,7 @@ function Page() {
 
 
                         }}>
-                            <p className="font-rfabb md:text-[0.8rem] sm:text-[0.78rem] xs:text-[.73rem] xxs:text-[0.6rem] xxxs:text-[0.4rem] 270:text-[0.35rem] text-start ">The classic Steve Harvey show! Come and be a witness<br /> to the recreation of one of the most popular reality<br /> shows of all time, at Family Feud: the game show!</p>
+                            <p className="font-rfabb md:text-[0.8vw] sm:text-[0.78rem] xs:text-[1.9vw] xxs:text-[1.9vw] xxxs:text-[1.9vw] 270:text-[1.8vw] text-start mt-[2%] ">The classic Steve Harvey show! Come and be a witness to the recreation of one of the most popular reality shows of all time, at Family Feud: the game show!</p>
                         </div>
                     </div>
 
@@ -560,7 +560,7 @@ function Page() {
                             width: "91.39%",
                             aspectRatio: "329/39",
                             left: "3.53%",
-                            top: '77.5%',
+                            top: '76.5%',
                             backgroundImage: `url(${Middleleftdiv1})`,
                             backgroundSize: "cover",
                             backgroundRepeat: "no-repeat",
@@ -569,7 +569,7 @@ function Page() {
 
 
                         }}>
-                            <p className="font-rfabb md:text-[0.8rem] sm:text-[0.78rem] xs:text-[.73rem] xxs:text-[0.6rem] xxxs:text-[0.4rem] 270:text-[0.35rem] text-start ">Duet with a partner as your symphonies collide against<br></br> each other in this competition of melodies.</p>
+                            <p className="font-rfabb md:text-[1.2vw] sm:text-[2vw] xs:text-[.73rem] xxs:text-[0.6rem] xxxs:text-[0.4rem] 270:text-[0.35rem] text-start mt-[2.5%]">Duet with a partner as your symphonies collide against each other in this competition of melodies.</p>
                         </div>
                     </div>
 
@@ -615,7 +615,7 @@ function Page() {
 
 
                         }}>
-                            <p className=" font-rfabb md:text-[0.8rem] sm:text-[0.78rem] xs:text-[.73rem] xxs:text-[0.6rem] xxxs:text-[0.4rem] 270:text-[0.35rem] text-start ">Let the beats flow and your body move! Engage<br /> yourself in solo western performances where rhythm<br /> is everything.</p>
+                            <p className=" font-rfabb md:text-[0.8rem] sm:text-[2vw] xs:text-[.73rem] xxs:text-[2vw] xxxs:text-[2vw] 270:text-[2vw] text-start mt-[2.5%] ">Let the beats flow and your body move! Engage yourself in solo western performances where rhythm is everything.</p>
                         </div>
                     </div>
 
@@ -662,7 +662,7 @@ function Page() {
 
 
                         }}>
-                            <p className="font-rfabb md:text-[0.8rem] sm:text-[0.78rem] xs:text-[.73rem] xxs:text-[0.6rem] xxxs:text-[0.4rem] 270:text-[0.35rem] text-start ">Set the stage on fire as you unleash the rhythm and<br /> showcase your choreography in this dance battle.</p>
+                            <p className="font-rfabb md:text-[0.8rem] sm:text-[2vw] xs:text-[2vw] xxs:text-[2vw] xxxs:text-[2vw] 270:text-[2vw] text-start mt-[1%] ">Set the stage on fire as you unleash the rhythm and showcase your choreography in this dance battle.</p>
                         </div>
                     </div>
 
@@ -709,7 +709,7 @@ function Page() {
 
 
                         }}>
-                            <p className="font-rfabb md:text-[0.8rem] sm:text-[0.78rem] xs:text-[.73rem] xxs:text-[0.6rem] xxxs:text-[0.4rem] 270:text-[0.35rem] text-start ">Explore the allure of the classical arts! Let light <br />descend onto the stage as you enamor yourself in<br /> elegant styles and witness the roots of dance itself!</p>
+                            <p className="font-rfabb md:text-[0.8rem] sm:text-[2vw] xs:text-[2vw] xxs:text-[2vw] xxxs:text-[2vw] 270:text-[2vw] text-start mt-[1%]">Explore the allure of the classical arts! Let light descend onto the stage as you enamor yourself in elegant styles and witness the roots of dance itself!</p>
                         </div>
                     
                     </div>

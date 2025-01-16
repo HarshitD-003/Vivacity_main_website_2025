@@ -128,7 +128,7 @@ function SpeakingArts() {
 
 
                             }}>
-                                <p className="font-rfabb 1280:text-[0.8rem] lg:text-[0.63rem] md:text-[0.48rem] 1400:text-[0.87rem] 1500:text-[0.97rem] 1600:text-[1.05rem] 1980:text-[1.26rem] 2100:text-[1.4rem] text-start ">Let the verses flow as you engage in blindfolded<br /> conversations that journey beyond the superficial!
+                                <p className="font-rfabb 1280:text-[0.8vw] lg:text-[0.8vw] md:text-[0.8vw] text-[0.8vw] text-start mt-1 ">Let the verses flow as you engage in blindfolded conversations that journey beyond the superficial!
                                 </p>
                             </div>
 
@@ -178,7 +178,7 @@ function SpeakingArts() {
 
 
                             }}>
-                                <p className="font-rfabb 1280:text-[0.8rem] lg:text-[0.63rem] md:text-[0.48rem] 1400:text-[0.87rem] 1500:text-[0.97rem] 1600:text-[1.05rem] 1980:text-[1.26rem] 2100:text-[1.34rem] text-start ">The classic Steve Harvey show! Come and be a witness<br /> to the recreation of one of the most popular reality<br /> shows of all time, at Family Feud: the game show!
+                                <p className="font-rfabb 1280:text-[0.9vw] lg:text-[0.9vw] md:text-[0.9vw] text-[0.9vw] mt-[0.8%] text-start ">The classic Steve Harvey show! Come and be a witness to the recreation of one of the most popular reality shows of all time, at Family Feud: the game show!
                                 </p>
                             </div>
                         </div>
@@ -226,7 +226,7 @@ function SpeakingArts() {
 
 
                             }}>
-                                <p className="font-rfabb 1280:text-[0.76rem] lg:text-[0.63rem] md:text-[0.48rem] 1400:text-[0.84rem] 1500:text-[0.92rem] 1600:text-[1.01rem] 1980:text-[1.21rem] 2100:text-[1.32rem] text-start ">Poetry, storytelling, music, or stand-ups! A <br />little something for everyone as you step into<br /> the spotlight in Spotlight!
+                                <p className="font-rfabb 1280:text-[0.9vw] lg:text-[0.9vw] md:text-[0.9vw] text-[0.9vw] mt-[1.2%] 1280:mt-1 text-start ">Poetry, storytelling, music, or stand-ups! A little something for everyone as you step into the spotlight in Spotlight!
                                 </p>
                             </div>
                         </div>
@@ -274,7 +274,7 @@ function SpeakingArts() {
 
 
                             }}>
-                                <p className="font-rfabb 1280:text-[0.8rem] lg:text-[0.63rem] md:text-[0.48rem] 1400:text-[0.87rem] 1500:text-[0.97rem] 1600:text-[1.05rem] 1980:text-[1.26rem] 2100:text-[1.34rem] text-start ">Explore the allure of the classical arts! Let light<br /> descend onto the stage as you enamor yourself in<br /> elegant styles and witness the roots of dance itself!
+                                <p className="font-rfabb 1280:text-[0.9vw] lg:text-[0.9vw] md:text-[0.9vw] text-[0.9vw] mt-[1.2%] 1280:mt-1 text-start">Explore the allure of the classical arts! Let light<br /> descend onto the stage as you enamor yourself in elegant styles and witness the roots of dance itself!
                                 </p>
                             </div>
                         </div>
@@ -321,7 +321,7 @@ function SpeakingArts() {
 
 
                             }}>
-                                <p className="font-rfabb 1280:text-[0.76rem] lg:text-[0.69rem] md:text-[0.55rem] 1400:text-[0.84rem] 1500:text-[0.92rem] 1600:text-[1.01rem] 1980:text-[1.21rem] 2100:text-[1.34rem] text-start ">Let the puns flow and laughter rumble! A battle of<br /> puns, and a prize reserved only for the emperor!
+                                <p className="font-rfabb 1280:text-[0.9vw] lg:text-[0.9vw] md:text-[0.9vw] text-[0.9vw] mt-[1.2%] 1280:mt-1 text-start ">Let the puns flow and laughter rumble! A battle of<br /> puns, and a prize reserved only for the emperor!
                                 </p>
                             </div>
                         </div>
@@ -370,7 +370,7 @@ function SpeakingArts() {
 
 
                             }}>
-                                <p className="font-rfabb 1280:text-[0.8rem] lg:text-[0.63rem] md:text-[0.48rem] 1400:text-[0.87rem] 1500:text-[0.97rem] 1600:text-[1.05rem] 1980:text-[1.26rem] 2100:text-[1.34rem] text-start ">Show your linguistic prowess in this celestial<br /> conquest of spellings. Arm yourself with vocabulary<br /> and fight your way to the top. Do you dare?
+                                <p className="font-rfabb 1280:text-[0.9vw] lg:text-[0.9vw] md:text-[0.9vw] text-[0.9vw] mt-[1.5%] 1280:mt-1 text-start ">Show your linguistic prowess in this celestial conquest of spellings. Arm yourself with vocabulary and fight your way to the top. Do you dare?
                                 </p>
                             </div>
                         </div>
@@ -459,7 +459,7 @@ function SpeakingArts() {
 
 
                         }}>
-                            <p className="font-rfabb md:text-[0.8rem] sm:text-[0.78rem] xs:text-[.73rem] xxs:text-[0.6rem] xxxs:text-[0.4rem] 270:text-[0.35rem] text-start ">Let the verses flow as you engage in blindfolded<br /> conversations that journey beyond the superficial!  </p>
+                            <p className="font-rfabb  sm:text-[2vw] xs:text-[2vw] xxs:text-[2vw] xxxs:text-[2vw] 270:text-[2vw] mt-[1%] text-start ">Let the verses flow as you engage in blindfolded conversations that journey beyond the superficial!  </p>
                         </div>
                     </div>
 
@@ -505,7 +505,7 @@ function SpeakingArts() {
 
 
                         }}>
-                            <p className="font-rfabb md:text-[0.8rem] sm:text-[0.78rem] xs:text-[.73rem] xxs:text-[0.6rem] xxxs:text-[0.4rem] 270:text-[0.35rem] text-start ">The classic Steve Harvey show! Come and be a witness<br /> to the recreation of one of the most popular reality<br /> shows of all time, at Family Feud: the game show!</p>
+                            <p className="font-rfabb sm:text-[2vw] xs:text-[2vw] xxs:text-[2vw] xxxs:text-[1.95vw] 270:text-[2vw] mt-[1.50%] text-start ">The classic Steve Harvey show! Come and be a witness to the recreation of one of the most popular reality shows of all time, at Family Feud: the game show!</p>
                         </div>
                     </div>
 
@@ -552,7 +552,7 @@ function SpeakingArts() {
 
 
                         }}>
-                            <p className="font-rfabb md:text-[0.8rem] sm:text-[0.78rem] xs:text-[.73rem] xxs:text-[0.6rem] xxxs:text-[0.4rem] 270:text-[0.35rem] text-start ">Duet with a partner as your symphonies collide against<br></br> each other in this competition of melodies.</p>
+                            <p className="font-rfabb sm:text-[2vw] xs:text-[2vw] xxs:text-[2vw] xxxs:text-[1.95vw] 270:text-[2vw] mt-[1.50%] text-start ">Duet with a partner as your symphonies collide against each other in this competition of melodies.</p>
                         </div>
                     </div>
 
@@ -589,7 +589,7 @@ function SpeakingArts() {
                             width: "81.39%",
                             aspectRatio: "329/39",
                             left: "3.53%",
-                            top: '77.5%',
+                            top: '81.5%',
                             backgroundImage: `url(${Middlerightdiv1})`,
                             backgroundSize: "cover",
                             backgroundRepeat: "no-repeat",
@@ -598,7 +598,7 @@ function SpeakingArts() {
 
 
                         }}>
-                            <p className=" font-rfabb md:text-[0.8rem] sm:text-[0.78rem] xs:text-[.73rem] xxs:text-[0.6rem] xxxs:text-[0.4rem] 270:text-[0.35rem] text-start ">Let the beats flow and your body move! Engage<br /> yourself in solo western performances where rhythm<br /> is everything.</p>
+                            <p className=" font-rfabb sm:text-[2vw] xs:text-[2vw] xxs:text-[2vw] xxxs:text-[1.95vw] 270:text-[2vw] mt-[1.50%] text-start">Let the beats flow and your body move! Engage yourself in solo western performances where rhythm is everything.</p>
                         </div>
                     </div>
 
@@ -636,7 +636,7 @@ function SpeakingArts() {
                             width: "91.39%",
                             aspectRatio: "329/28",
                             left: "3.53%",
-                            top: '76.5%',
+                            top: '79.5%',
                             backgroundImage: `url(${Bottomleftdiv1})`,
                             backgroundSize: "cover",
                             backgroundRepeat: "no-repeat",
@@ -645,7 +645,7 @@ function SpeakingArts() {
 
 
                         }}>
-                            <p className="font-rfabb md:text-[0.8rem] sm:text-[0.78rem] xs:text-[.73rem] xxs:text-[0.6rem] xxxs:text-[0.4rem] 270:text-[0.35rem] text-start ">Set the stage on fire as you unleash the rhythm and<br /> showcase your choreography in this dance battle.</p>
+                            <p className="font-rfabb sm:text-[2vw] xs:text-[2vw] xxs:text-[2vw] xxxs:text-[1.95vw] 270:text-[2vw] mt-[1.0%] text-start ">Set the stage on fire as you unleash the rhythm and showcase your choreography in this dance battle.</p>
                         </div>
                     </div>
 
@@ -683,7 +683,7 @@ function SpeakingArts() {
                             width: "91.39%",
                             aspectRatio: "329/39",
                             left: "3.53%",
-                            top: '76.5%',
+                            top: '79.5%',
                             backgroundImage: `url(${BottomRightdiv1})`,
                             backgroundSize: "cover",
                             backgroundRepeat: "no-repeat",
@@ -692,7 +692,7 @@ function SpeakingArts() {
 
 
                         }}>
-                            <p className="font-rfabb md:text-[0.8rem] sm:text-[0.78rem] xs:text-[.73rem] xxs:text-[0.6rem] xxxs:text-[0.4rem] 270:text-[0.35rem] text-start ">Explore the allure of the classical arts! Let light <br />descend onto the stage as you enamor yourself in<br /> elegant styles and witness the roots of dance itself!</p>
+                            <p className="font-rfabb sm:text-[2vw] xs:text-[2vw] xxs:text-[2vw] xxxs:text-[1.95vw] 270:text-[2vw] mt-[1.50%] text-start ">Explore the allure of the classical arts! Let light descend onto the stage as you enamor yourself in elegant styles and witness the roots of dance itself!</p>
                         </div>
                     </div>
                     <div className="w-[100%] absolute bottom-0 p-[5%]">

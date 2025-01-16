@@ -273,7 +273,7 @@ function Exciting() {
                 className="w-full object-contain"
               />
               <div className="absolute inset-0 flex items-center justify-center px-6">
-                <p className="text-black text-[2.6vw] font-rfabb font-bold leading-tight">
+                <p className="text-black text-[1.9vw] font-rfabb font-bold leading-tight">
                   A NIGHT OF MUSIC AND CAMARADERIE! JOIN US, AS WE SING OUR
                   HEARTS OUT, MAKE NEW FRIENDS, HAVE FUN, AND CREATE MEMORIES
                   THAT WILL REMAIN ETCHED IN OUR HEARTS!

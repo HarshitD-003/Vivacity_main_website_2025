@@ -79,7 +79,7 @@ function Sahyog(){
                        
     
                  }}>
-                    <p className="font-rfabb 1280:text-[0.78rem] lg:text-[0.60rem] md:text-[0.45rem] 1400:text-[0.85rem] 1500:text-[0.91rem] 1600:text-[0.98rem] 1980:text-[1.2rem] 2100:text-[1.3rem] text-start ">Let's extend a hand to the less fortunate. A show just for the<br/> homeless children, as we provide them a platform to showcase their<br/> own talents and assist them in receiving the support for their dreams<br/> that they need. This is sahyog: the helping hand.  </p>
+                    <p className="font-rfabb 1280:text-[0.8vw] lg:text-[0.8vw] md:text-[0.8vw] mt-2 text-[0.8vw] text-start ">Let's extend a hand to the less fortunate. A show just for the homeless children, as we provide them a platform to showcase their own talents and assist them in receiving the support for their dreams<br/> that they need. This is sahyog: the helping hand.  </p>
             </div>
 
                     
@@ -154,7 +154,7 @@ function Sahyog(){
                        
     
                  }}>
-                    <p className="font-rfabb sm:text-[0.8rem]  xs:text-[0.6rem] xxs:text-[0.57rem] xxxs:text-[0.42rem] 270:text-[0.34rem] text-start ">Let's extend a hand to the less fortunate. A show just for the<br/> homeless children, as we provide them a platform to showcase their<br/> own talents and assist them in receiving the support for their dreams<br/> that they need. This is sahyog: the helping hand.  </p>
+                    <p className="font-rfabb sm:text-[2vw]  xs:text-[2vw] xxs:text-[2vw] xxxs:text-[2vw] 270:text-[2vw] mt-[1.5%] text-start ">Let's extend a hand to the less fortunate. A show just for the<br/> homeless children, as we provide them a platform to showcase their<br/> own talents and assist them in receiving the support for their dreams<br/> that they need. This is sahyog: the helping hand.  </p>
             </div>
 
                     
