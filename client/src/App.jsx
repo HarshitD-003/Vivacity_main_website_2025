@@ -14,6 +14,7 @@ import NormalRegistration from "./pages/NormalRegistration";
 import EventsPage from "./pages/EventsPage";
 import OurTeams from "./pages/OurTeams";
 import Sponsors from "./pages/Sponsors";
+import ActualSponsors from "./pages/ActualSponsors";
 import Page404 from "./pages/404";
 
 const aws = import.meta.env.VITE_AWS;
@@ -179,7 +180,7 @@ function AppContent() {
         <Route path="/events" element={<EventsPage />} />
         <Route path="/NormalRegistration" element={<NormalRegistration />} />
         <Route path="/OurTeam" element={<OurTeams />} />
-        <Route path="/Sponsors" element={<Sponsors />} />
+        <Route path="/Sponsors" element={<ActualSponsors />} />
         <Route path="/Netra" element={<Sponsors />} />
         <Route path="/Spotify" element={<Sponsors />} />
         <Route path="/AppleMusic" element={<Sponsors />} />
