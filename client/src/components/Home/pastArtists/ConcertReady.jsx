@@ -72,7 +72,7 @@ const Concert = () => {
 
                   {/* Buttons container*/}
                   <div className="flex gap-2 xxs:gap-3 xs:gap-4 sm:gap-5 justify-start mt-[7%] xs:mb-[5%]">
-                    <button className="px-[2%] py-[1.2%] xxs:px-3 xxs:py-2 xs:px-3  xs:py-2 sm:px-5 sm:py-3 border border-green-500 rounded-3xl text-black font-bold flex items-center gap-1.5 xxs:gap-2 xs:gap-2.5 sm:gap-3" onClick={() => navigate("/Spotify")}>
+                    <button className="px-[2%] py-[1.2%] xxs:px-3 xxs:py-2 xs:px-3  xs:py-2 sm:px-5 sm:py-3 border border-green-500 rounded-3xl text-black font-bold flex items-center gap-1.5 xxs:gap-2 xs:gap-2.5 sm:gap-3" onClick={() => window.open("https://open.spotify.com/playlist/69j9DryXY4uixo0jjr6xTA?si=hkif4R5VSmSgpZ1jFw4D5A&pi=oBfECo7mT7WAU", "_blank")}>
                       <img
                         src={Spotify}
                         alt="Spotify logo"
@@ -137,7 +137,7 @@ const Concert = () => {
                   So grab your squad, hit play, and let the good times roll.
                 </p>
                 <div className="flex gap-[3%] justify-start">
-                  <button className="pl-[1%] pr-[1.5%] py-[1%] border border-green-500 rounded-3xl text-black font-bold flex items-center gap-2 lg:text-[1.5rem] md:text-[1.3rem]" onClick={() => navigate("/Spotify")}>
+                  <button className="pl-[1%] pr-[1.5%] py-[1%] border border-green-500 rounded-3xl text-black font-bold flex items-center gap-2 lg:text-[1.5rem] md:text-[1.3rem]" onClick={() => window.open("https://open.spotify.com/playlist/69j9DryXY4uixo0jjr6xTA?si=hkif4R5VSmSgpZ1jFw4D5A&pi=oBfECo7mT7WAU", "_blank")}>
                     <img
                       src={Spotify}
                       alt="Spotify logo"

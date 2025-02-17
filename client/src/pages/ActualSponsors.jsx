@@ -52,11 +52,11 @@ const images = [
 function Sponsors() {
     return (
         <div className="w-full min-h-screen py-10" style={{ backgroundImage: `url(${BgBlue})` }}>
-            <h2 className="text-3xl font-bold text-center mb-10">Thank You to Our Sponsors!</h2>
+            <h2 className="font-ttr text-7xl font-bold text-center mb-10">Thank You to Our Sponsors!</h2>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 max-w-6xl mx-auto">
                 {images.map((sponsor, index) => (
-                    <div key={index} className="bg-gray-400 shadow-md rounded-lg p-4 flex flex-col items-center text-center">
+                    <div key={index} className="bg-gray-300 shadow-lg border border-black rounded-lg p-4 flex flex-col items-center text-center">
                         <img src={sponsor.url} alt={sponsor.name} className="w-32 h-32 object-contain mb-4" />
                         <h3 className="text-xl font-semibold">{sponsor.name}</h3>
                         <p className="text-gray-600">{sponsor.title}</p>
